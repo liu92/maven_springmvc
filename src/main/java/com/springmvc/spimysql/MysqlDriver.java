@@ -1,4 +1,4 @@
-package com.springmvc.spi;
+package com.springmvc.spimysql;
 
 /**
  * ClassName: MysqlDriver
@@ -8,10 +8,7 @@ package com.springmvc.spi;
  * <version> 1.0
  * @author lin
  */
-public class MysqlDriver implements DriverDemo {
+public class MysqlDriver{
 
-    @Override
-    public void Connection() {
 
-    }
 }
