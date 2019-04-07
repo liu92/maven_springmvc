@@ -1,0 +1,3 @@
+#xxxSpiDemo=com.xxx.SpiDemo
+com.springmvc.spi.FristSpiImpl
+com.springmvc.spi.SecondSpiImpl
