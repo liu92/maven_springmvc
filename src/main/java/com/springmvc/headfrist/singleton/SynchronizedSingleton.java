@@ -1,13 +1,22 @@
 package com.springmvc.headfrist.singleton;
 
 public class SynchronizedSingleton {
-	 //一个静态的实例  
-    private static SynchronizedSingleton synchronizedSingleton; 
-    //私有化构造函数  
-    private SynchronizedSingleton(){} 
-    //给出一个公共的静态方法返回一个单一实例  
+    /**
+     * 一个静态的实例
+      */
+    private static SynchronizedSingleton synchronizedSingleton;
+
+    /**
+     * 私有化构造函数
+     */
+    private SynchronizedSingleton(){}
+
+    /**
+     * 给出一个公共的静态方法返回一个单一实例
+     * @return
+     */
     public static SynchronizedSingleton getInstance(){ 
-    	/*
+    	/**
     	 * 当前实例为null，也就是实例还未创建时才进行同步，
     	 * 否则就直接返回，这样就节省了很多无谓的线程等待时间，
     	 * 值得注意的是在同步块中，我们再次判断了synchronizedSingleton是否为null，
